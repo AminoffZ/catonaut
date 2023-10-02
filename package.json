@@ -1,0 +1,17 @@
+{
+  "name": "webpack-browser-extension-template",
+  "module": "bundler.ts",
+  "devDependencies": {
+    "@types/chrome": "^0.0.246",
+    "bun-types": "latest",
+    "prettier": "^3.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "bun bundler.ts",
+    "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,md}' '!build/**' '!node_modules/**'"
+  },
+  "type": "module"
+}

@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Your Extension Name",
+  "version": "0.1.0",
+  "web_accessible_resources": [
+    {
+      "resources": ["script.js"],
+
+      "matches": ["http://*/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "action": {
+    "default_icon": "./images/icon256.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "yourcustom@token.io",
+      "strict_min_version": "42.0"
+    }
+  }
+}
