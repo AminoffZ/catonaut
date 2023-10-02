@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/AminoffZ/astro-browser-extension-builder/main/public/assets/icon128.png" align="right" width="128" height="128" title="catonaut">
+<img src="https://github.com/AminoffZ/astro-browser-extension-builder/blob/main/public/assets/images/icon128.png?raw=true" align="right" width="128" height="128" title="catonaut">
 
 # 🚀 Browser extension builder with Astro and Bun
 
@@ -139,7 +139,7 @@ This will start a development server and open the popup in your browser as if it
 
 ## Testing your extension
 
-Thankfully you don't have to get your extension published before being able to test it. Refer to **Before starting** for information about testing an extension, also referred to as loading unpacked extensions. You do however need to build the extension to be able to test it.
+Thankfully you don't have to get your extension published before being able to test it. Refer to [**Before starting**](https://github.com/AminoffZ/astro-browser-extension-builder/tree/main#-before-starting) for information about testing an extension, also referred to as loading unpacked extensions. You do however need to build the extension to be able to test it.
 
 ## Build
 
