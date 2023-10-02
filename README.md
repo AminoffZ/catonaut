@@ -1,15 +1,15 @@
 <img src="https://github.com/AminoffZ/astro-browser-extension-builder/blob/main/public/assets/images/icon128.png?raw=true" align="right" width="128" height="128" title="catonaut">
 
-# 🚀 Browser extension builder with Astro and Bun
+# Catonaut
 
-Quickstart your extension development by using this repository!
+A browser extension builder with Astro and Bun
 
 ## 🌟 Features
 
 - 📘 Typescript for a better developer experience
 - 🚄 Bun for blazing fast development
 - ⏱ Manifest version 3 (MV3) for priority publishing
-- 🌠 Astro enabling flexible popup design
+- 🚀 Astro enabling flexible popup design
 - 🐱‍🏍 Cool Mascot
 
 ## 🚧 Before starting
