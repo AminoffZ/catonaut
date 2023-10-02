@@ -2,27 +2,29 @@
   "manifest_version": 3,
   "name": "Your Extension Name",
   "version": "0.1.0",
-  "web_accessible_resources": [
-    {
-      "resources": ["script.js"],
-
-      "matches": ["http://*/*"]
-    }
-  ],
   "content_scripts": [
     {
       "matches": ["http://*/*"],
       "js": ["content.js"],
-      "css": ["style.css"]
+      "css": ["content.css"]
     }
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
-    "default_icon": "./images/icon256.png"
+    "default_popup": "index.html"
   },
   "browser_specific_settings": {
     "gecko": {
       "id": "yourcustom@token.io",
       "strict_min_version": "42.0"
     }
+  },
+  "icons": {
+    "16": "assets/images/icon16.png",
+    "32": "assets/images/icon32.png",
+    "48": "assets/images/icon48.png",
+    "128": "assets/images/icon128.png"
   }
 }
