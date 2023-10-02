@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Your Extension Name",
+  "name": "Catonaut",
   "version": "0.1.0",
   "content_scripts": [
     {

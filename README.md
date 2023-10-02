@@ -110,7 +110,7 @@ For manipulating the DOM, HTML can be added or changed [programmatically](https:
 
 ## The Popup
 
-You can modify the popup just like you would modify an Astro app. You can start by modifying the src/pages/index.astro file.
+You can modify the popup just like you would modify an Astro app. You can start by modifying the src/pages/index.astro file. When starting, there is a Placeholder component inside the body that you can modify at src/components/Placeholder.astro or remove.
 
 ### Changing the icon
 

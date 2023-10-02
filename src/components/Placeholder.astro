@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="card">
+    <h1>Catonaut</h1>
+    <div class="astronaut">
+      <img
+        title="catonaut"
+        width="128"
+        height="128"
+        src="/assets/images/icon128.png"
+        alt="catonaut"
+      />
+    </div>
+  </div>
+</div>
+
+<style is:global>
+  :root {
+    --primary: rgb(255, 161, 8);
+    --gradient-start: rgb(42, 35, 62);
+    --gradient-end: rgb(24, 21, 37);
+  }
+
+  body {
+    margin: 0;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+      sans-serif;
+  }
+  h1 {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+  }
+  .container {
+    background: linear-gradient(
+      180deg,
+      var(--gradient-start) 50%,
+      var(--gradient-end) 100%
+    );
+    padding: 0.5rem;
+  }
+  .card {
+    background-color: rgba(255, 255, 255, 0.01);
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: 0 0 3rem rgba(255, 255, 255, 0.1);
+    width: 12rem;
+  }
+  .astronaut {
+    text-align: center;
+  }
+  img {
+    filter: drop-shadow(0 0 1rem cyan);
+  }
+</style>
