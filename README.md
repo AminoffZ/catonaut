@@ -110,8 +110,6 @@ For manipulating the DOM, HTML can be added or changed [programmatically](https:
 
 ## The Popup
 
-## Modifying the popup
-
 You can modify the popup just like you would modify an Astro app. You can start by modifying the src/pages/index.astro file.
 
 ### Changing the icon
