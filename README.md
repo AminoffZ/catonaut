@@ -23,9 +23,9 @@ Make sure you have some understanding of extension development. Here are some re
 
 ## 🛠️ Setup
 
+![image](https://github.com/AminoffZ/catonaut/assets/55880031/261b38a7-09d5-417a-a908-807c29bf37fb)
 
-
-Clone the project, navigate into folder using terminal and run:
+Use the template or clone the project, navigate into the project folder and run:
 
 ```bash
 bun i
