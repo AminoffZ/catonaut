@@ -192,9 +192,10 @@ Contains the content.ts and background.ts. These are compiled to JavaScript when
 
 Not necessary although I find that a useful way to structure the scripts is to add files in this folder and import their functionality in the content.ts and background.ts.
 
-## Examples
+## 🏆 Showcase
 
-[Example extension published to the Chrome Web Store](https://github.com/AminoffZ/github-repo-size). Note that there may be quite a few differences between the example and this repository.
+- [GitHub Repo Size](https://github.com/AminoffZ/github-repo-size) - Was built with the predecessor to this template.
+- [Steam Multisell](https://github.com/AminoffZ/steam-multisell)
 
 ## 💅 Formatting
 
