@@ -5,7 +5,10 @@
 A browser extension builder with Astro and Bun  
 [Node.js + npm Version here](https://github.com/AminoffZ/catonaut-node) 💚
 
-For those who prefer 
+## 🏆 Showcase
+
+- [GitHub Repo Size](https://github.com/AminoffZ/github-repo-size) - Shows the total size of repos and of files and folders.
+- [Steam Multisell](https://github.com/AminoffZ/steam-multisell) - UI for multiselling on the Steam marketplace.
 
 ## 🌟 Features
 
@@ -191,11 +194,6 @@ Contains the content.ts and background.ts. These are compiled to JavaScript when
 ### src/scripts/internal
 
 Not necessary although I find that a useful way to structure the scripts is to add files in this folder and import their functionality in the content.ts and background.ts.
-
-## 🏆 Showcase
-
-- [GitHub Repo Size](https://github.com/AminoffZ/github-repo-size) - Was built with the predecessor to this template.
-- [Steam Multisell](https://github.com/AminoffZ/steam-multisell)
 
 ## 💅 Formatting
 
