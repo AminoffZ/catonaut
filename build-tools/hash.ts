@@ -1,4 +1,8 @@
-// 🤓 will 😂
+/* This file is used to generate unique hashes for the 
+ * extracted inline scripts and styles.
+ * 🤓 will 😂
+ */
+
 /**
  * djb2 hash function.
  *

@@ -1,3 +1,7 @@
+/* This file is used to retrieve all .ts and .js filepaths from the scripts directory
+ * to be bundled into the dist/ directory by bun.
+ */
+
 import { readdir } from 'fs/promises';
 import { extname, join } from 'path';
 
