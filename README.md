@@ -2,7 +2,7 @@
 
 # Catonaut
 
-A browser extension builder with Astro and Bun  
+A browser extension builder with Astro and Bun
 [Node.js + npm Version here](https://github.com/AminoffZ/catonaut-node) 💚
 
 ## 🏆 Showcase
@@ -27,6 +27,21 @@ Make sure you have some understanding of extension development. Here are some re
 - Windows Users
   - Until [this](https://github.com/oven-sh/bun/issues/43) is resolved, Bun is not supported on Windows. [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) is a workaround.
   - Or use the [Node.js + npm version](https://github.com/AminoffZ/catonaut-node) of this template
+
+## 🛠️ Quick Setup
+
+You can use Bun to quickly initialize a new project:
+
+```bash
+bun create catonaut [AppName]
+```
+OR
+
+```bash
+bunx create-catonaut [AppName]
+```
+
+For more information, refer to [create-catonaut](https://github.com/AminoffZ/create-catonaut)
 
 ## 🛠️ Setup
 
@@ -204,14 +219,6 @@ To format with the provided configuration, run:
 bun run format
 ```
 
-# License
+## LICENSE
 
-MIT License
-
-Copyright (c) 2023 AminoffZ
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Catonaut is under [MIT License](https://github.com/AminoffZ/catonaut/blob/main/LICENSE).
