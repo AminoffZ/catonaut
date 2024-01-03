@@ -1,6 +1,12 @@
+// This file is used to create icons for the manifest.json file.
+// Place an image in the public/assets/images folder and run: `bun run icons` from the root directory.
+// Make sure to change the filename variable to the name of your image.
+// IMPORTANT: You need to have imagemagick installed on your system.
+// On Ubuntu you can install it with: sudo apt-get install imagemagick
+
 import imagemagick from 'imagemagick';
 
-const root = `../public/assets/`;
+const root = `../public/assets/images/`;
 const filename = 'example.png';
 
 /**
