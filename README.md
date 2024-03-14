@@ -9,6 +9,7 @@ A browser extension builder with Astro and Bun
 
 - [GitHub Repo Size](https://github.com/AminoffZ/github-repo-size) - Shows the total size of repos and of files and folders.
 - [Steam Multisell](https://github.com/AminoffZ/steam-multisell) - UI for multiselling on the Steam marketplace.
+- [Google Maps Button](https://github.com/AminoffZ/google-maps-button) - Re-adds the Google Maps link to searches (removed in EU).
 
 ## 🌟 Features
 
