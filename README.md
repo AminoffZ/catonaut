@@ -19,6 +19,10 @@ A browser extension builder with Astro and Bun
 - 🚀 Astro enabling flexible popup design
 - 🐱‍🏍 Cool Mascot
 
+## 📣 Community
+
+Head over to the [community page](https://github.com/AminoffZ/catonaut/discussions) for announcements, Q&A, collaboration and inspiration!
+
 ## 🚧 Before starting
 
 Make sure you have some understanding of extension development. Here are some resources:
