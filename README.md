@@ -110,7 +110,7 @@ Example:
 
 ### JavaScript
 
-To add JavaScript to modify the page, edit the src/scripts/content.ts. It will be compiled to JavaScript when you build the extension. Look at **Build** for more information.
+To add JavaScript to modify the page, edit the `src/scripts/content.ts`. It will be compiled to JavaScript when you build the extension. Look at **Build** for more information.
 
 ### What is a content.ts?
 
@@ -130,7 +130,7 @@ For additional information visit the [background script](https://developer.chrom
 
 ### CSS
 
-To add CSS to the DOM, you need to create a CSS file in the public folder and reference it in the manifest.json. The above manifest example assumes there is a file called content.css in the public/assets/styles/ folder.
+To add CSS to the DOM, you need to create a CSS file in the public folder and reference it in the `manifest.json`. The above manifest example assumes there is a file called `content.css` in the `public/assets/styles/` folder.
 
 ### HTML
 
@@ -138,13 +138,13 @@ For manipulating the DOM, HTML can be added or changed [programmatically](https:
 
 ## The Popup
 
-You can modify the popup just like you would modify an Astro app. You can start by modifying the src/pages/index.astro file. When starting, there is a Placeholder component inside the body that you can modify at src/components/Placeholder.astro or remove.
+You can modify the popup just like you would modify an Astro app. You can start by modifying the `src/pages/index.astro` file. When starting, there is a Placeholder component inside the body that you can modify at `src/components/Placeholder.astro` or remove.
 
 ### Changing the icon
 
 You can generate the icons from an image.
 
-1. Replace the public/assets/images/example.png
+1. Replace the `public/assets/images/example.png`
 2. Run the following command in the terminal:
 
 ```bash
@@ -185,8 +185,10 @@ This will build the extension in the dist folder.
 
 ## 🏗️ Project structure
 
-<pre>
+```bash
 root
+├── 📁 .github
+    └── 📁 workflows
 ├── 📁 build-tools
 ├── 📁 dist
 ├── 📁 public
@@ -194,7 +196,15 @@ root
     ├── 📁 pages
     └── 📁 scripts
         └── 📁 internal
-</pre>
+```
+
+### .github
+
+Contains a `dependabot.yml`, you only need to change the schedule interval to your liking and enable dependabot on github.
+
+### .github/workflows
+
+Contains workflows to verify the formatting, linting and building of your project.
 
 ### build-tools
 
@@ -203,6 +213,7 @@ Contains tools used for building the extension. You should not need to modify an
 ### dist
 
 Contains the built extension. This folder can be loaded as an unpacked extension.
+Can be changed by setting outDir in `astro.config.ts`d and changing any reference to `dist`.
 
 ### public
 
@@ -214,19 +225,19 @@ Contains the source files. This is where you will be doing most of your work.
 
 ### src/pages
 
-Contains the index.astro. This is compiled to HTML when building the extension and functions as the popup. I find adding a folder src/components/ and importing them in the index.astro to be a good way to structure the popup.
+Contains the `index.astro`. This is compiled to HTML when building the extension and functions as the popup. I find adding a folder src/components/ and importing them in the `index.astro` to be a good way to structure the popup.
 
 ### src/scripts
 
-Contains the content.ts and background.ts. These are compiled to JavaScript when building the extension. The content.ts is injected into the DOM of the page.
+Contains the `content.ts` and `background.ts`. These are compiled to JavaScript when building the extension. The content.ts is injected into the DOM of the page.
 
 ### src/scripts/internal
 
-Not necessary although I find that a useful way to structure the scripts is to add files in this folder and import their functionality in the content.ts and background.ts.
+Not necessary although I find that a useful way to structure the scripts is to add files in this folder and import their functionality in the `content.ts` and `background.ts`.
 
 ## 💅 Formatting
 
-I added a .prettierrc for contributing. If building for your own purposes, feel free to remove it.
+I added a `.prettierrc` for contributing. If building for your own purposes, feel free to remove it.
 To format with the provided configuration, run:
 
 ```bash
@@ -235,7 +246,7 @@ bun run format
 
 ## 👕 Linting
 
-There's an .eslintrc.cjs for the linting configuration.
+There's an `.eslintrc.cjs` for the linting configuration.
 To lint with the provided configuration, run:
 
 ```bash

@@ -24,4 +24,4 @@ jobs:
           bun install
 
       - name: Check code formatting
-        run: bun run checkFormat
+        run: bun run check
