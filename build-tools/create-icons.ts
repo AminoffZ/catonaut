@@ -14,7 +14,7 @@ const filename = 'example.png';
  * Sizes: 16, 32, 48, 128
  */
 function createIcons() {
-  for (let size of [16, 32, 48, 128]) {
+  for (const size of [16, 32, 48, 128]) {
     imagemagick.resize(
       {
         srcPath: `${root}${filename}`,
@@ -22,7 +22,7 @@ function createIcons() {
         width: size,
         height: size,
       },
-      (err, res) => {
+      (err /* ,res */) => {
         if (err) throw err;
       }
     );

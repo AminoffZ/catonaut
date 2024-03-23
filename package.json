@@ -2,29 +2,37 @@
   "name": "catonaut",
   "module": "bundler.ts",
   "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "bun run manifest && astro build && cd build-tools && bun run csp && bun bundler.ts",
+    "build:firefox": "bun run manifest firefox && astro build && cd build-tools && bun run csp && bun bundler.ts firefox",
+    "preview": "astro preview",
+    "astro": "astro",
+    "csp": "bun -b extract-inline.ts",
+    "icons": "cd build-tools && bun create-icons.ts",
+    "manifest": "bun -b updateManifest.ts",
+    "format": "prettier --write .",
+    "check": "prettier --check .",
+    "lint": "eslint ."
+  },
   "dependencies": {
     "astro": "^3.2.1"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.246",
     "@types/imagemagick": "^0.0.33",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
     "bun-types": "latest",
+    "chalk": "4.1.2",
+    "eslint": "^8.57.0",
     "imagemagick": "^0.1.3",
     "prettier": "^3.0.3",
     "tiny-glob": "^0.2.9"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  },
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build && cd build-tools && bun run csp && bun bundler.ts",
-    "preview": "astro preview",
-    "astro": "astro",
-    "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,md}' '!build/**' '!node_modules/**'",
-    "csp": "bun extract-inline.ts",
-    "icons": "cd build-tools && bun create-icons.ts"
-  },
-  "type": "module"
+  }
 }

@@ -1,4 +1,4 @@
-/* This file is used to generate unique hashes for the 
+/* This file is used to generate unique hashes for the
  * extracted inline scripts and styles.
  * 🤓 will 😂
  */

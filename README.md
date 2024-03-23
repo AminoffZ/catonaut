@@ -40,6 +40,7 @@ You can use Bun to quickly initialize a new project:
 ```bash
 bun create catonaut [AppName]
 ```
+
 OR
 
 ```bash
@@ -52,10 +53,10 @@ For more information, refer to [create-catonaut](https://github.com/AminoffZ/cre
 
 ![image](https://github.com/AminoffZ/catonaut/assets/55880031/261b38a7-09d5-417a-a908-807c29bf37fb)
 
-Use the template or clone the project, navigate into the project folder and run:
+Use the template, clone the project or use the create-catonaut command, navigate into the project folder and run:
 
 ```bash
-bun i
+bun install
 ```
 
 ### The manifest
@@ -174,6 +175,14 @@ To build the extension, run:
 bun run build
 ```
 
+Or
+
+```bash
+bun run build:firefox
+```
+
+This will build the extension in the dist folder.
+
 ## 🏗️ Project structure
 
 <pre>
@@ -222,6 +231,15 @@ To format with the provided configuration, run:
 
 ```bash
 bun run format
+```
+
+## 👕 Linting
+
+There's an .eslintrc.cjs for the linting configuration.
+To lint with the provided configuration, run:
+
+```bash
+bun run lint
 ```
 
 ## LICENSE
