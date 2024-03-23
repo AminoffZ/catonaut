@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "bun run manifest && astro build && cd build-tools && bun run csp && bun bundler.ts",
-    "build:firefox": "bun run manifest firefox && astro build && cd build-tools && bun run csp && bun bundler.ts firefox",
+    "build": "bun run manifest && bun run astro build && cd build-tools && bun run csp && bun bundler.ts",
+    "build:firefox": "bun run manifest firefox && bun run astro build && cd build-tools && bun run csp && bun bundler.ts firefox",
     "preview": "astro preview",
     "astro": "astro",
     "csp": "bun -b extract-inline.ts",
