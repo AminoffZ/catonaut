@@ -20,7 +20,11 @@ async function removeInlineScriptAndStyle(directory: string) {
   const styleRegx = /<style[^>]*>([\s\S]+?)<\/style>/g;
   const glob = new Glob('**/*.html');
 
-  for await (const file of glob.scan(directory)) {
+  for await (const file of glob.scan({
+    cwd: directory,
+    dot: true,
+    absolute: false,
+  })) {
     const filePath = join(directory, file);
     // console.log(`Found ${files.length} files`);
     console.log(`Edit file: ${filePath}`);

@@ -40,6 +40,7 @@ You can use Bun to quickly initialize a new project:
 ```bash
 bun create catonaut [AppName]
 ```
+
 OR
 
 ```bash
