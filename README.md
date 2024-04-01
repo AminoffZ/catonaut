@@ -29,9 +29,6 @@ Make sure you have some understanding of extension development. Here are some re
 
 - [Chrome](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/)
 - [Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
-- Windows Users
-  - Until [this](https://github.com/oven-sh/bun/issues/43) is resolved, Bun is not supported on Windows. [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) is a workaround.
-  - Or use the [Node.js + npm version](https://github.com/AminoffZ/catonaut-node) of this template
 
 ## 🛠️ Quick Setup
 
