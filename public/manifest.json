@@ -4,15 +4,9 @@
   "version": "0.0.1",
   "content_scripts": [
     {
-      "matches": [
-        "http://*/*"
-      ],
-      "js": [
-        "content.js"
-      ],
-      "css": [
-        "content.css"
-      ]
+      "matches": ["http://*/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
     }
   ],
   "background": {
