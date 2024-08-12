@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Catonaut",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "content_scripts": [
     {
       "matches": ["http://*/*"],
@@ -14,12 +14,6 @@
   },
   "action": {
     "default_popup": "index.html"
-  },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "yourcustom@token.io",
-      "strict_min_version": "42.0"
-    }
   },
   "icons": {
     "16": "assets/images/icon16.png",
