@@ -4,10 +4,10 @@
  * https://github.com/withastro/roadmap/discussions/377
  */
 
-import { join } from 'path';
+import { Glob } from 'bun';
 import { readFile, writeFile } from 'fs/promises';
+import { join } from 'path';
 import { djb2 } from './hash';
-import glob from 'tiny-glob';
 
 /**
  * Remove inline scripts and styles from the generated HTML files.
@@ -18,18 +18,17 @@ async function removeInlineScriptAndStyle(directory: string) {
   console.log('Removing Inline Scripts and Styles');
   const scriptRegx = /<script[^>]*>([\s\S]+?)<\/script>/g;
   const styleRegx = /<style[^>]*>([\s\S]+?)<\/style>/g;
-  const files = await glob('**/*.html', {
+  const glob = new Glob('**/*.html');
+
+  for await (const file of glob.scan({
     cwd: directory,
     dot: true,
     absolute: false,
-    filesOnly: true,
-  });
-
-  console.log(`Found ${files.length} files`);
-
-  for (const file of files.map((f) => join(directory, f))) {
-    console.log(`Edit file: ${file}`);
-    let f = await readFile(file, { encoding: 'utf-8' });
+  })) {
+    const filePath = join(directory, file);
+    // console.log(`Found ${files.length} files`);
+    console.log(`Edit file: ${filePath}`);
+    let f = await readFile(filePath, { encoding: 'utf-8' });
 
     let script;
     while ((script = scriptRegx.exec(f))) {
@@ -62,7 +61,7 @@ async function removeInlineScriptAndStyle(directory: string) {
       console.log(`Inline style extracted and saved at: ${directory}${fn}`);
     }
 
-    await writeFile(file, f);
+    await writeFile(filePath, f);
   }
 }
 
